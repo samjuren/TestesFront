@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestesFront.MainPage">
+
+    <StackLayout>
+        <VerticalStackLayout
+            Spacing="25">
+            <Frame
+            BackgroundColor="#2196F3" 
+            Padding="25" 
+            CornerRadius="15">
+         
+            <Label
+                Padding="0,50,0,50"
+                Text="Bem-vindo ao LoanBank"
+                HorizontalTextAlignment="Center"
+                TextColor="White" 
+                FontSize="30"/>
+        </Frame>
+
+            <Label
+            Padding="0,25,0,10"
+            Text="Login:"
+            HorizontalTextAlignment="Start"
+            FontSize="25"/>
+
+            <Entry
+                x:Name="txt_Nome"
+                Placeholder="Digite o login"
+                PlaceholderColor="#2196F3"
+                BackgroundColor="#2c3e50"
+            />
+        
+            <Entry
+                x:Name="txt_Senha"
+                Placeholder="Digite sua senha"
+                PlaceholderColor="#2196F3"
+                BackgroundColor="#2c3e50"
+            />
+            <Button
+                  Text="LOGIN"
+                  Clicked="Button_Clicked"
+            />
+        </VerticalStackLayout>
+    </StackLayout>
+
+</ContentPage>
